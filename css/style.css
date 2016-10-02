@@ -1,0 +1,79 @@
+body{
+  background: #0292a6; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(135deg, #0292a6, #031A34); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(135deg, #0292a6, #031A34); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(135deg, #0292a6, #031A34); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(135deg, #0292a6, #031A34); /* Standard syntax (must be last) */
+}
+
+.page-header{
+  color: white;
+  font-family: 'Josefin Slab', serif;
+  font-size: 50px;
+  text-shadow: 5px 5px #0292a6;
+}
+
+row{
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+
+#svalue{
+  color: white;
+}
+
+.search-box{
+  margin-top:100px;
+}
+
+.wiki-search{
+  height: 50px;
+  box-shadow: 10px 10px #0292a6;
+}
+
+.random-wiki{
+  padding-top: 30px;
+  padding-bottom: 50px;
+  font-size: 20px;
+}
+
+.result-display{
+  margin-top: 10px;
+  margin-bottom: 30px;
+  height: 200px;
+  background-color: white;
+  box-shadow: 10px 10px;
+}
+
+.txt-header{
+  padding-left: 10px;
+  padding-top: 10px;
+  font-family: 'Yellowtail', cursive;
+}
+
+.txt-desc{
+  padding-top: 10px;
+  padding-left: 20px;
+  font-family: 'Handlee', cursive;
+  font-size: 15px;
+  
+}
+
+#svalue{
+  font-family: 'Satisfy', cursive;
+  font-size: 20px;
+  padding-top: 10px;
+}
+
+#btn-random{
+ opacity: 0.3;
+ height: 50px;
+ border-radius: 35px;
+}
+
+#btn-random:hover{
+  opacity: 0.9;
+  background-color: white;
+  color: #292a6;
+  
+}

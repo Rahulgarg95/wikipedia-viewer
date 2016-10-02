@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>Wikipedia viewer</title>
+    <link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Josefin+Slab" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Handlee" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Bad+Script" rel="stylesheet">
+    
+    
+    <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
+
+        <link rel="stylesheet" href="css/style.css">
+
+    
+    
+    
+    
+  </head>
+
+  <body>
+
+    <body ng-app="wikiApp" ng-controller="wikiController" class="container">
+  <h1 class = "text-center page-header">Wikipedia Viewer</h1>
+  <div class="row">
+    <div class="col-md-6 col-md-offset-3 search-box">
+      <form>
+        <input type="text" class="form-control wiki-search" placeholder="Search for..." ng-model="searchValue" ng-change="wikiSearch()">
+        <h4 class="text-center" id="svalue"> Yup!! You searched for <span class="text-danger"> {{searchValue}} </span>:) </h4>
+      </form>
+      <p class="text-center random-wiki"><a href="http://en.wikipedia.org/wiki/Special:Random" target="_blank"> 
+        <button id="btn-random">Click for Random Article</button></a></p>
+    </div>
+  </div>
+  
+  <div class="row">
+    <a href="https://en.wikipedia.org/?curid={{ article.pageid }}" target="_blank" ng-repeat="article in articles">
+    <div class="col-md-8 col-md-offset-2">
+        <div class="result-display">
+          <h2 class="txt-header">{{ article.title }}</h2>
+          <b><p class="txt-desc">{{ article.extract }}</p></b>
+        </div>
+    </div>
+    </a>
+  </div>
+</body>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.min.js'></script>
+
+        <script src="js/index.js"></script>
+
+    
+    
+  </body>
+</html>
